@@ -51,7 +51,7 @@ const addImageWatermarkToImage = async function (
 
   image.composite(watermark, x, y, {
     mode: Jimp.BLEND_SOURCE_OVER,
-    opacitySource: 0.4,
+    opacitySource: 0.3,
   });
   await image.quality(100).writeAsync(outputFile);
 };
